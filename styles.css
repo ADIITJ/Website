@@ -1,0 +1,187 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    transition: background-color 0.5s ease;
+    background-color: rgb(241, 241, 241);
+}
+
+.social-logo {
+    width: 30px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust spacing between logos */
+}
+
+body.dark-mode {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+
+  .container {
+    max-width: 100%; /* Change this to 100% */
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ffffff00;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.884);
+  }
+  
+  body.dark-mode .container {
+    background-color: rgba(86, 86, 79, 0.7); /* Dark mode translucent */
+  }
+
+header,
+footer {
+    background-color: rgb(255, 251, 233);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically center */
+    border-radius: 10px; /* Add curved edges */
+    padding: 10px 20px; /* Add padding for better appearance */
+    }
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    
+    .about-content {
+    flex: 1 1 60%;
+    text-align: left;
+    }
+    
+    .about-image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .about-image img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    }
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: rgba(43, 37, 19, 0.7);
+    color:rgb(255, 241, 184);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Dark mode translucent */
+}
+
+/* Rest of your CSS remains unchanged */
+
+  
+  h1 {
+    font-size: 3.5rem;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: #282828;
+    text-decoration: node;
+    transition: transform 0.5s ease;
+    font-size: 1.5rem;
+  }
+  nav a:hover {
+    transform: translateX(2px);
+  }
+  body.dark-mode nav a {
+    color: rgb(255, 255, 255); /* Adjust color for dark mode */
+    }
+  button {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.3rem 0.3rem;
+    border-radius: 2px;
+    transition: background-color 0.5s ease;
+    float: right;
+    margin-right: 1rem;
+    background-color: #242424;
+    color: #fff;
+  }
+  
+  button:hover {
+    background-color: #fff;
+    color: #242424;
+  }
+
+  body.dark-mode button:hover {
+    background-color: #242424;
+    color: #fff;
+  }
+
+  body.dark-mode button {
+    background-color: #fff;
+    color: #242424;
+  }
+
+  button:active {
+    background-color: #242424;
+    color: #fff;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  li {
+    flex-basis: calc(33.33% - 1rem);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+  }
