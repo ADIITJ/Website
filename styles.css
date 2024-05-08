@@ -245,6 +245,9 @@ body.dark-mode footer {
     .about-content {
       width: 100%;
     }
+    p{
+      text-align: left;
+    }
   }
   
   @media (max-width: 480px) {
@@ -272,6 +275,9 @@ body.dark-mode footer {
       margin-top: 20px; /* Add some space above the image */
     }
     .about-content {
+      text-align: left;
+    }
+    p{
       text-align: left;
     }
   }
