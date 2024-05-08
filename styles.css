@@ -221,9 +221,11 @@ body.dark-mode footer {
   }
   /* Adjustments for medium-sized screens */
   @media (max-width: 768px) {
+    p {
+      text-align: right;
+    }
     .main-links,
-    .social-links,
-    .mode-switcher button {
+    .social-links{
       flex-direction: column;
     }
     .header-content h1 {
@@ -246,7 +248,6 @@ body.dark-mode footer {
   }
   
   @media (max-width: 480px) {
-    .header-content,
     .main-links,
     .social-links {
       padding: 10px 0; /* Increase padding for better touch targets */
@@ -269,6 +270,9 @@ body.dark-mode footer {
       flex-shrink: 1; /* Allow the image to shrink if needed */
       flex-basis: 200px; /* Set an initial size before shrinking or growing */
       margin-top: 20px; /* Add some space above the image */
+    }
+    p {
+      text-align: right;
     }
   }
  
