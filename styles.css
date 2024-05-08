@@ -221,9 +221,9 @@ body.dark-mode footer {
   }
   /* Adjustments for medium-sized screens */
   @media (max-width: 768px) {
-    .header-content,
     .main-links,
-    .social-links {
+    .social-links,
+    .mode-switcher button {
       flex-direction: column;
     }
     .header-content h1 {
@@ -235,6 +235,13 @@ body.dark-mode footer {
     }
     .mode-switcher button {
       font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+    #about {
+      flex-wrap: wrap;
+    }
+    .about-image,
+    .about-content {
+      width: 100%;
     }
   }
   
