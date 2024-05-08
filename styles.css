@@ -1,13 +1,13 @@
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: Garamond, serif;
     transition: background-color 0.5s ease;
     background-color: rgb(241, 241, 241);
 }
 
 .social-logo {
-    width: 30px; /* Adjust width as needed */
+    width: 40px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Adjust spacing between logos */
+    margin-right: 6px; /* Adjust spacing between logos */
 }
 
 body.dark-mode {
@@ -30,41 +30,71 @@ body.dark-mode {
     background-color: rgba(86, 86, 79, 0.7); /* Dark mode translucent */
   }
 
-header,
-footer {
+  header,
+  footer{
     background-color: rgb(255, 251, 233);
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Align items vertically center */
-    border-radius: 10px; /* Add curved edges */
-    padding: 10px 20px; /* Add padding for better appearance */
-    }
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.main-links {
+    display: flex;
+    gap: 10px; /* Adjust the gap between links */
+}
+
+.social-links {
+    display: flex;
+    gap: 2px; /* Adjust the gap between social links */
+    margin-top: 7px; /* Space between main links and social links */
+}
+
+.mode-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    }
-    
-    .about-content {
-    flex: 1 1 60%;
-    text-align: left;
-    }
-    
-    .about-image {
-    flex: 1 1 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .about-image img {
-    max-width: 60%;
-    height: auto;
-    border-radius: 50%;
-    overflow: hidden;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.about-content {
+  flex: 1 1 60%;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.about-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 80%; /* Adjust the width to reduce the image size */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 50%;
+  object-fit: cover; /* Cover the area without distorting */
+  flex-shrink: 1; /* Allow the image to shrink if needed */
+  flex-basis: 200px; /* Set an initial size before shrinking or growing */
+}
+
+  
 
 body.dark-mode header,
 body.dark-mode footer {
@@ -110,15 +140,18 @@ body.dark-mode footer {
   button {
     border: none;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    padding: 0.3rem 0.3rem;
-    border-radius: 2px;
+    padding: 0.3rem 0.3rem; /* Adjust padding if necessary to fit the circular shape */
     transition: background-color 0.5s ease;
-    float: right;
-    margin-right: 1rem;
+    float: none; /* Remove float to avoid affecting dimensions */
+    margin-right: 1rem; /* Consider adjusting or removing this if it affects the circular shape */
     background-color: #242424;
     color: #fff;
+    border-radius: 50%; /* Apply border-radius to make the shape circular */
+    width: 50px; /* Set a specific width */
+    height: 50px; /* Set a specific height to match the width */
+    display: inline-block; /
   }
   
   button:hover {
@@ -154,6 +187,7 @@ body.dark-mode footer {
     font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 1rem;
+    text-align: justify;
   }
   
   ul {
