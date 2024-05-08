@@ -219,3 +219,46 @@ body.dark-mode footer {
     padding: 1rem;
     border-top: 1px solid #ccc;
   }
+  /* Adjustments for medium-sized screens */
+@media (max-width: 768px) {
+  .header-content,.main-links,.social-links {
+     flex-direction: column;
+   }
+  .header-content h1 {
+     font-size: 2rem; /* Smaller font size for mobile */
+   }
+  .main-links,.social-links {
+     gap: 5px; /* Reduce gap between links */
+   }
+  .mode-switcher button {
+     font-size: 0.9rem; /* Smaller font size for mobile */
+   }
+ }
+ 
+ /* Adjustments for small screens */
+ @media (max-width: 480px) {
+  .header-content,.main-links,.social-links {
+     padding: 10px 0; /* Increase padding for better touch targets */
+   }
+  .about-content,.about-image {
+     flex: 1 1 100%; /* Full width for better readability */
+   }
+   .about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically on mobile */
+  }
+  
+  .about-image img {
+    max-width: 100%; /* Full width for better readability */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Cover the area without distorting */
+    flex-shrink: 1; /* Allow the image to shrink if needed */
+    flex-basis: 200px; /* Set an initial size before shrinking or growing */
+    margin-top: 20px; /* Add some space above the image */
+  }
+  
+ }
+ 
