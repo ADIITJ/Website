@@ -222,7 +222,7 @@ body.dark-mode footer {
   /* Adjustments for medium-sized screens */
   @media (max-width: 768px) {
     .about-content {
-      text-align: right;
+      text-align: left;
     }
     .main-links,
     .social-links {
@@ -272,6 +272,6 @@ body.dark-mode footer {
       margin-top: 20px; /* Add some space above the image */
     }
     .about-content {
-      text-align: right;
+      text-align: left;
     }
   }
