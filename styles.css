@@ -225,7 +225,7 @@ body.dark-mode footer {
       text-align: right;
     }
     .main-links,
-    .social-links{
+    .social-links {
       flex-direction: column;
     }
     .header-content h1 {
@@ -271,7 +271,7 @@ body.dark-mode footer {
       flex-basis: 200px; /* Set an initial size before shrinking or growing */
       margin-top: 20px; /* Add some space above the image */
     }
-    .about-content{
+    .about-content {
       text-align: right;
     }
   }
